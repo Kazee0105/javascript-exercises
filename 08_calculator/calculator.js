@@ -14,19 +14,32 @@ const sum = function(array) {
   return total;
 };
 
-const multiply = function(a,b) {
-  return a * b
+const multiply = function() {
+  let totalMulti = 1
+  for (i = 0; i < arguments.length; i++){
+    totalMulti *= arguments[i]
+  }
+return totalMulti
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+	return Math.pow(a , b)
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	let total = 1;
+  if(num === 0 || num === total){
+    return total;
+  }
+  else if (num > 1){
+    for(i = num; i >= 1; i-- ){
+      total = total * i;
+    }
+    return total;
+  }
 };
 
-console.log(sum([7,11]));
+console.log(factorial(4));
 
 
 // Do not edit below this line
