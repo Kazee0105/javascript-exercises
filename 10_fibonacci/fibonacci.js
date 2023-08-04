@@ -1,7 +1,7 @@
  const fibonacci = function(num) {
     let p = 0, c = 1, arr = [];
 
-    if(num < 0) return "OOPS"
+    if(num < 0) return "OOPS" 
     for (i = 0; i < num; i++){
         if(arr.length < 2){
             arr.push(c);
